@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:rgb(1, 1, 38);
+    --text-color:white;
+}
+.profile-img{
+    position: fixed;
+    margin: 2rem;
+    z-index: 100;
+}
+.div{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background: var(--bg-color); */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+     align-items: center; 
+}
+.login-body{
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+.body{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--bg-color);
+    height: 100vh;
+}
+.login-body .info{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+.login-body .profile {
+    text-align: center;
+    margin: 1rem;
+}
+.login-body .profile h2 {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.help-contact .help{
+    display: flex;
+    justify-content: space-between;
+}
+.help-contact a{
+    color: var(--text-color);
+    text-decoration: none;
+   
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background: var(--text-color);
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+}
+form h1{
+    margin: 1rem;
+    font-size: 2rem;
+}
+form p{
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+form label{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+form input {
+    margin: 0 1rem 1rem 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border:1px solid darkblue;
+    font-size: 1.3rem;
+}
+form button{
+    margin: 0 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* shopping */
+html{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.header-logo{
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1rem .3rem;
+    width: 73%;
+    top: 0;
+    background: var(--text-color);
+    border-radius: 1rem;
+}
+.logo img{
+    position: fixed;
+}
+
+.logo-input input{
+    
+    width: 22rem;
+    padding: .7rem ;
+    border-radius: 1rem;
+    background: var(--text-color);
+}
+.logo-input .img{
+    
+    z-index: 1000;
+}
+.logo-input .img i{
+    position: fixed;
+    padding: .7rem 1rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    right: 26rem;
+    top: 1rem;
+    background-color: blue;
+}
+
+.nav {
+    margin: .5rem;
+    width: 75%;
+    display: flex;
+    margin-top: 3rem;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--text-color);
+    
+}
+.nav a{
+    padding:.3rem 1rem;
+    margin: .1rem;
+    text-decoration: none;
+    color: var(--bg-color);
+    background: rgba(128, 128, 128, 0.225);
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    
+}
+.nav .nav-list{
+    display: flex;   
+}
+ 
+.nav a:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+    background: var(--bg-color);
+}
+.cart-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    position: relative;
+    width: 75%;
+    top: 5rem;
+} 
+.cart {
+    width: 13rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 1rem;
+}
+.cart .cart-photo{
+    width: 90%;
+    margin: .3rem;
+
+}
+.cart .about-cart{
+    font-size: 1rem;
+}
+.cart .cart-price{
+    font-size: 1.2rem;
+    color: blue;
+}
+.order{
+    width: 25%;
+    position: absolute;
+    top: 1rem;right:0;
+    display: flex;
+    flex-direction: column;
+    background: var(--text-color);
+    
+}
+.order-menu{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.order-cart{
+    display: flex;
+}
+.order-cart .order-photo{
+    width: 9rem;
+    margin: .3rem;
+    margin: 1rem;
+}
+ 
+.remove-cart{
+    cursor: pointer;
+    margin: 1rem;
+}
+.detail{
+    margin: 1rem;
+}
+.detail .count {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+}
+.detail .count span{
+    padding: 2px .6rem;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.detail .count .plus{
+    border-right: none;
+    cursor: pointer;
+}
+.detail .count .minus{
+    cursor: pointer;
+}
+.total{
+    position: fixed;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 255, 0.202);
+    bottom: 0;
+    width:25%;
+}
+.about-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-total .total-head{
+    margin: 1rem 5rem 0rem 0;
+}
+.pay-button button{
+    width: 100%;
+    padding: .7rem;
+    border-radius: 2rem;
+    color: var(--text-color);
+    background: blue;
+    margin: 2rem 0 1rem 0;
+    cursor: pointer;
+}
+@media (max-width:1024px) {
+    html{
+        width: 100vw;
+    }
+    .body{
+        width: 100%;
+    }
+    form input {
+        font-size: 1.5rem;
+        width: 50vw;
+    }
+    form button{
+        margin: 0 1rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        background: var(--bg-color);
+        color: var(--text-color);
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
+    .logo img{
+        width: 7rem;
+    }
+    .nav {
+        margin: .5rem;
+        display: flex;
+        margin: 1.5rem;
+        margin-top: 2.5rem;
+        /* flex-wrap: wrap; */
+        overflow-x: scroll;
+    }
+    .nav::-webkit-scrollbar{
+        height: 0;
+    }
+    .logo-input input{
+        margin-right: 2rem;
+        width: 10rem;
+        padding: .5rem;
+    }
+    .logo-input .img i{
+        right: 11.3rem;
+        padding: .5rem 1rem;
+    }
+    .nav a{
+        font-size: 1rem;
+        text-align: center;
+        width: 7rem;
+    }
+    .cart-container{
+        width: 70%;
+        flex-wrap: wrap;
+        top:10rem ;
+    }
+    .cart {
+        width: 10rem;
+        margin: auto;
+        
+        margin: 1rem;
+
+    }
+    .about-cart{
+        font-size: 1rem;
+    }
+    .order {
+        width: 35%;
+        z-index: 1001;
+        right: 0;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .order .order-menu h1{
+        font-size: 1.5rem;
+    }
+    .order .order-photo{
+        width: 3rem;
+        margin: 1rem 0;
+    }
+    .order .about-order{
+        font-size: .7rem;
+    }
+    .detail{
+        margin: .5rem;
+    }
+    .total{
+        margin-top: 2rem;
+        width: 35%;
+    }
+    .about-total .total-head{
+        margin: 2rem 3rem 0rem 0;
+    }
+}
